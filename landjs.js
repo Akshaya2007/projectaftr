@@ -23,6 +23,13 @@ window.addEventListener('DOMContentLoaded', () => {
   applyTheme(isDarkMode);
 });
 
+window.addEventListener('load', function () {
+  if (window.innerWidth < 768) {
+    alert("For the best experience, please enable 'Desktop Site' mode in your browser.");
+  }
+});
+
+
 toggle.addEventListener('change', () => {
   const isChecked = toggle.checked;
   localStorage.setItem('darkMode', isChecked);
