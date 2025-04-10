@@ -155,7 +155,12 @@ footer {
     min-width: 100%;
   }
   
-  
+  .stories-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
   
   .card-inner {
     position: relative;
