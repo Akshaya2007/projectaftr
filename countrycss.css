@@ -1,0 +1,115 @@
+:root {
+    --cyan: #008b8b;
+    --baby-pink: #ffb6c1;
+    --purple: #9b59b6;
+    --golden: #daa520;
+    --text: #ffffff;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to right, #008080, #3b5998, #8e44ad, #e91e63);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav {
+    background-color: var(--purple);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: var(--golden);
+  }
+  
+  .heading-section {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .heading-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .heading-section p {
+    font-size: 1.2rem;
+  }
+  
+  .start-journey {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .start-journey img {
+    width: 120px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .start-journey img:hover {
+    transform: scale(1.1);
+  }
+  
+  .table-section {
+    margin: 3rem auto;
+    width: 90%;
+    max-width: 1000px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+  
+  .table-section h2 {
+    color: var(--golden);
+    margin-bottom: 1rem;
+  }
+  
+  .table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--text);
+  }
+  
+  .table-section th, .table-section td {
+    border: 1px solid var(--baby-pink);
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+  
+  .table-section th {
+    background-color: var(--purple);
+  }
+  
+  footer {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background: var(--cyan);
+    color: var(--text);
+    box-sizing: border-box;
+    margin-top: auto;
+    flex-shrink: 0;
+  }
+  

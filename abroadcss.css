@@ -1,0 +1,195 @@
+:root {
+  --white: #ffffff;
+  --text: #000000;
+  --cyan: #00d4ff;
+  --pink: #ff9ee6;
+  --gold: #ffd700;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #008080, #3b5998, #8e44ad, #e91e63);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* This ensures the main content expands to fill the screen */
+main,
+.course-container,
+.abroad-container,
+.story-container,
+.contact-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Updated footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--cyan);
+  color: var(--text);
+  margin-top: auto;
+}
+
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cyan);
+    padding: 12px 24px;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active-link {
+    color: var(--gold);
+    text-decoration: underline;
+  }
+  
+  .dark-toggle {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle-switch {
+    width: 50px;
+    height: 26px;
+    background-color: #ccc;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-switch::after {
+    content: '';
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+  }
+  
+  #mode-toggle:checked + .toggle-switch {
+    background-color: var(--gold);
+  }
+  
+  #mode-toggle:checked + .toggle-switch::after {
+    transform: translateX(24px);
+  }
+  
+
+/* Hide the checkbox */
+#mode-toggle {
+  display: none;
+}
+
+  
+  input:checked + label::after {
+    transform: translateX(20px);
+  }
+  
+  main {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* 🔹 Title & Subtitle styles */
+  .title {
+    font-size: 36px;
+    color: var(--text);
+    margin-bottom: 10px;
+    transition: var(--transition);
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    color: var(--text);
+    margin-bottom: 40px;
+    transition: var(--transition);
+  }
+  
+  /* 🔹 Country Cards */
+  .country-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .country-cards .card {
+    width: 250px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .country-cards .card a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    text-shadow: 1px 1px 4px black;
+  }
+  
+  .country-cards .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* 🔹 Consultancy Ads */
+  .ads {
+    margin-top: 60px;
+  }
+  
+  .ads h2 {
+    font-size: 28px;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  
+  .consultancy-ad {
+    background-color: var(--pink);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: var(--text);
+  }  

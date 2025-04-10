@@ -1,0 +1,221 @@
+:root {
+    --white: #ffffff;
+    --text: #000000;
+    --cyan: #00d4ff;
+    --pink: #ff9ee6;
+    --gold: #ffd700;
+  }
+  
+  html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #008080, #3b5998, #8e44ad, #e91e63);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  /* This ensures the main content expands to fill the screen */
+  main,
+  .course-container,
+  .abroad-container,
+  .story-container,
+  .contact-content {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  /* Updated footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--cyan);
+    color: var(--text);
+    margin-top: auto;
+  }
+  
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--cyan);
+      padding: 12px 24px;
+    }
+    
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--text);
+    }
+    
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    
+    .nav-links li a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    
+    .nav-links li a:hover{
+      color: var(--gold);
+      text-decoration: underline;
+    }
+    
+    .dark-toggle {
+      display: flex;
+      align-items: center;
+    }
+    
+    .toggle-switch {
+      width: 50px;
+      height: 26px;
+      background-color: #ccc;
+      border-radius: 30px;
+      position: relative;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .toggle-switch::after {
+      content: '';
+      width: 22px;
+      height: 22px;
+      background-color: white;
+      border-radius: 50%;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      transition: transform 0.3s ease;
+    }
+    
+    #mode-toggle:checked + .toggle-switch {
+      background-color: var(--gold);
+    }
+    
+    #mode-toggle:checked + .toggle-switch::after {
+      transform: translateX(24px);
+    }
+    
+  
+  /* Hide the checkbox */
+  #mode-toggle {
+    display: none;
+  }
+  
+    
+    input:checked + label::after {
+      transform: translateX(20px);
+    }
+    
+    .title {
+      font-size: 36px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .subtitle {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    
+    .submit-link {
+      display: block;
+      text-align: center;
+      background: var(--gold);
+      color: var(--text);
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 auto 40px;
+      width: fit-content;
+      border-radius: 20px;
+    }
+    
+    .cards-wrapper {
+      padding: 10px 20px;
+    }
+    
+    .cards-container {
+      display: flex;
+      gap: 20px;
+      padding: 10px;
+      min-width: 100%;
+    }
+    
+    .story-card {
+      min-width: 260px;
+      height: 350px;
+      perspective: 1000px;
+      flex-shrink: 0;
+    }
+    
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.8s;
+    }
+    
+    .story-card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 12px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    
+    .card-front {
+      background: var(--pink);
+    }
+    
+    .card-back {
+      background: var(--cyan);
+      transform: rotateY(180deg);
+    }
+    
+    .student-img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 10px;
+    }
+  
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    
+    .nav-links li a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+  
+    .nav-links li a:hover {
+      color: var(--gold);
+      text-decoration: underline;
+    }
