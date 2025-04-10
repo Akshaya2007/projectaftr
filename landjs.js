@@ -1,6 +1,8 @@
 const toggle = document.getElementById('mode-toggle');
 const root = document.documentElement;
 
+alert("If you are on mobile, use desktop site!");
+
 function applyTheme(darkMode) {
   if (darkMode) {
     root.style.setProperty('--white', '#111');
@@ -21,12 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const isDarkMode = localStorage.getItem('darkMode') === 'true';
   toggle.checked = isDarkMode;
   applyTheme(isDarkMode);
-});
-
-window.addEventListener('load', function () {
-  if (window.innerWidth < 768) {
-    alert("For the best experience, please enable 'Desktop Site' mode in your browser.");
-  }
 });
 
 
