@@ -219,16 +219,3 @@ footer {
     color: var(--gold);
     text-decoration: underline;
   }
-
-/* Make images and flags responsive */
-img, .flag {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Let containers adjust */
-.container, .content, .card-row {
-  width: 100%;
-  padding: 1rem;
-  box-sizing: border-box;
-}
