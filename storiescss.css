@@ -155,11 +155,11 @@ footer {
     min-width: 100%;
   }
   
-  .stories-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+  .story-card {
+    min-width: 260px;
+    height: 350px;
+    perspective: 1000px;
+    flex-shrink: 0;
   }
   
   .card-inner {
@@ -234,15 +234,6 @@ img, .flag {
 }
 
 /* Stack rows in mobile */
-/* For larger screens (default layout) */
-.stories-container {
-  display: flex;
-  flex-wrap: wrap;  /* Allows wrapping of stories */
-  gap: 20px;  /* Adjust the gap between stories */
-  justify-content: center;  /* Centers the stories horizontally */
-}
-
-/* For smaller screens (mobile) */
 @media (max-width: 768px) {
   .card-row {
     display: flex;
@@ -250,7 +241,7 @@ img, .flag {
     gap: 1rem;
   }
 
-  .course-card, .story-card, .flag-card{
+  .course-card, .story-card, .flag-card {
     width: 100%;
   }
 
