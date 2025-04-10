@@ -155,12 +155,7 @@ footer {
     min-width: 100%;
   }
   
-  .story-card {
-    min-width: 260px;
-    height: 350px;
-    perspective: 1000px;
-    flex-shrink: 0;
-  }
+  
   
   .card-inner {
     position: relative;
